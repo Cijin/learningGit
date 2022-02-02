@@ -1,7 +1,6 @@
-# Note: These notes are not everything about git but should suffice for day to
-day use of git. Please take the time to read [this awesome
-book](https://git-scm.com/book/en/v2) to learn about git in further detail. Your
-life as a programmer will be a little bit more enjoyable and free if you
+# Note: These notes are not everything you need to know about git but should suffice for day to day use of git.
+ * Please take the time to read [this awesome book](https://git-scm.com/book/en/v2) to learn about git in further detail. 
+ * Your life as a programmer will be a little bit more enjoyable and free if you
 understand and use git to it's fullest extent.
 
 # Git's goals when it was created (still is):
@@ -18,6 +17,33 @@ understand and use git to it's fullest extent.
     note (this is just my opinion)
   * If you use 2FA (which you should be), `SSH` is easier
   * Setting up `SSH` is not that difficult, follow [this guide by Github](https://docs.github.com/en/authentication/connecting-to-github-with-ssh)
+# Creating your first branch
+  * `git checkout -b <branch name>`, where b is branch (my guess :D)
+  * Note this is a shorthand for:
+  ```
+  git branch <branch name>
+  git checkout <branch name>
+  ```
+# Staging and Commiting 
+  * `git add <file name>` to stage a change
+  * `git add .` to stage all files
+  * `git commit ` to commit changes
+  * `git commit -m "<commit message>"` to commit with message
+  * `git commit -a -m "<commit message>"` to stage & commit with commit message
+
+# Structuring commit messages
+  * `<Ticket Number>: The change that was made`; keep it brief and in present
+    tense of what it does. ex: `PJ22:Change version number`
+  * If commit needs more explanation leave a line after the title (which should
+    be short and precise), and then add a list of changes and why you made them.
+    The why is more important than the what, as developers we can see what is
+    happening in the code, the why not so much.
+  
+# Deleting a branch
+  * `git branch -d <branch name>`; Once the branch has been merged to develop or
+    main, it no longer serves any purpose. You can delete it. Currently if you
+    notice when a `pr` gets merged the branch get's automatically deleted for
+    the same reason.
 
 # Merge Conflicts 
 
@@ -72,4 +98,3 @@ understand and use git to it's fullest extent.
 ## Git Worktrees:
   * If you find yourself switching branches quite often, look into [git
     worktree](https://git-scm.com/docs/git-worktree)
-
