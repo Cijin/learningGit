@@ -122,4 +122,14 @@ understand and use git to it's fullest extent.
 ## Git Worktrees:
   * If you find yourself switching branches quite often, look into [git
     worktree](https://git-scm.com/docs/git-worktree)
+    
+## Useful Extensions:
+  * VSCode
+   * [Github PR's and Issues](https://marketplace.visualstudio.com/items?itemName=GitHub.vscode-pull-request-github)
+
+ * Vim
+   * [Vim Fugitive](https://github.com/tpope/vim-fugitive), so awesome, it should be illegal 😂
+   * [Git Worktree](https://github.com/ThePrimeagen/git-worktree.nvim)
+   * [Vim Gitgutter](https://github.com/airblade/vim-gitgutter)
+  
 
