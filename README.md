@@ -38,6 +38,21 @@ understand and use git to it's fullest extent.
     be short and precise), and then add a list of changes and why you made them.
     The why is more important than the what, as developers we can see what is
     happening in the code, the why not so much.
+
+# Remote branches
+  * `git ls-remote <remote>` | `git remote show <remote>` to list remote
+    branches
+  * `origin` is not special, it's just widely used default name for remote. Just
+    like main or master
+    * `git fetch <remote>` to pull all meta-data from remote and does not do any
+      file transferring, it's more to check if there are changes available
+    * `git pull <remote>` copies the changes from the remote repository
+    * `git push <remote> <branch>` to push changes to the remote repository
+    * `git branch -u <remote/branch>` to track remote branch, let's you push
+      using `git push` and also warns against any changes you might need to
+      `pull` before pushing your changes
+    * You can also use `git checkout --track <remote/branch>` for the same
+      results as above before switching. Only needs to be done once.
   
 # Deleting a branch
   * `git branch -d <branch name>`; Once the branch has been merged to develop or
