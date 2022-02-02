@@ -37,8 +37,7 @@ understand and use git to it's fullest extent.
     something trivial, you can use `git commit --amend`. This command takes you
     to the staging area. **NOTE**: Only use this for trivial changes as this
     (trivial change) won't show up in your commit history
-  * *Unstaging* a staged file `git restore --staged <file name>`. Be mindful when
-    using reset with the `-hard` flag
+  * *Unstaging* a staged file `git restore --staged <file name>`. 
   * Restoring/Unmodyfing a file: `git checkout -- <file>` | `git restore <file>`
     **NOTE**: the changes you amde will be completely lost.
 # Structuring commit messages
