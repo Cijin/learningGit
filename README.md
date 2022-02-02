@@ -93,7 +93,7 @@ understand and use git to it's fullest extent.
     current branch)
 
 ## Ways to resolve Merge Conflicts:
-  * Accept local version `git checkout --outs <file name>` 
+  * Accept local version `git checkout --ours <file name>` 
   * Accept remote version `git checkout --theirs <file name>` 
   
   ### Using `git mergetool` 
