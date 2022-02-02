@@ -31,6 +31,16 @@ understand and use git to it's fullest extent.
   * `git commit -m "<commit message>"` to commit with message
   * `git commit -a -m "<commit message>"` to stage & commit with commit message
 
+# Undoing Things
+  * **NOTE**: You cannot undo some of these undo's so please be careful!
+  * If you commit too early and forget to remove something like a comment or
+    something trivial, you can use `git commit --amend`. This command takes you
+    to the staging area. **NOTE**: Only use this for trivial changes as this
+    (trivial change) won't show up in your commit history
+  * *Unstaging* a staged file `git restore --staged <file name>`. Be mindful when
+    using reset with the `-hard` flag
+  * Restoring/Unmodyfing a file: `git checkout -- <file>` | `git restore <file>`
+    **NOTE**: the changes you amde will be completely lost.
 # Structuring commit messages
   * `<Ticket Number>: The change that was made`; keep it brief and in present
     tense of what it does. ex: `PJ22:Change version number`
@@ -61,7 +71,6 @@ understand and use git to it's fullest extent.
     the same reason.
 
 # Merge Conflicts 
-
 ## Mindset: 
   * Merge conflicts are good, it's git letting you know that I'm going to let 
     you decide which lines to keep cause I'm not sure
@@ -113,3 +122,4 @@ understand and use git to it's fullest extent.
 ## Git Worktrees:
   * If you find yourself switching branches quite often, look into [git
     worktree](https://git-scm.com/docs/git-worktree)
+
